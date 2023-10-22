@@ -1,0 +1,6 @@
+.blur{
+  -webkit-backdrop-filter: blur(15 px);
+  -moz-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: var(--mantine-color-body);
+}

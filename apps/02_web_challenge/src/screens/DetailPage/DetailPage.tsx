@@ -21,12 +21,14 @@ export const DetailsPage = () => {
   return (
     <Box>
       <Box
+        className="blur"
         style={{
           position: 'sticky',
           top: '60px',
           backdropFilter: 'blur(15px)',
           zIndex: 99,
-          padding: 10,
+          paddingLeft: 10,
+          paddingRight: 10,
         }}
       >
         <Flex align={'center'} direction={'row-reverse'}>
@@ -48,7 +50,7 @@ export const DetailsPage = () => {
             total={(pages ?? 0) + (repos.length && repos.length >= 12 ? 1 : 0)}
           />
         </Flex>
-        <Title order={2} ta="center" m="sm" p="md">
+        <Title order={2} ta="center" p={12}>
           Find The Repos Below for <br />
           <Badge variant="filled" size="lg">
             {params.org}

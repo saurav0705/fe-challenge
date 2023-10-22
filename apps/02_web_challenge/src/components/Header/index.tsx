@@ -9,6 +9,7 @@ export function Header() {
   const navigate = useNavigate();
   return (
     <Box
+      className="blur"
       style={{
         position: 'sticky',
         top: 0,
